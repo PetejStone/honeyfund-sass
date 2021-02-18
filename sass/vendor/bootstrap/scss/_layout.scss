@@ -1,0 +1,56 @@
+
+.buttons-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    @include mq(small) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.section-two-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    @include mq(medium) {
+        flex-direction: column;
+    }
+    p {
+        margin: 0px;
+        @include mq(medium) {
+            margin: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+.btn {
+    margin: 1rem;
+    width: 125px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $white;
+    color: $blue;
+    border: 1px solid $blue;
+    &.focus {
+        background-color: $blue;
+        color: $white;
+    }
+    @include mq(small) {
+        margin: 5px;
+        height: 65px;
+        width: 100%;
+    }
+}
+
+.container {
+    background-color: $gray-100;
+    padding: 2rem;
+}
+.col {
+    background-color: $white;
+}
